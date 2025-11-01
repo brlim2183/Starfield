@@ -34,7 +34,7 @@ double myX,myY, myAngle, mySpeed;
      myX=300;
      myY=300;
      myAngle=(double)(Math.random()*2)*Math.PI;
-     mySpeed=(double)(Math.random()*3)+.1;
+     mySpeed=(double)(Math.random()*2)+.4;
      myHeight=10;
      myWidth=10;
      //myX=(Math.cos(myAngle))*mySpeed+myX;
@@ -47,12 +47,12 @@ double myX,myY, myAngle, mySpeed;
   }  
   void move(){
      if (Math.random()*50+600<myX||myX<-250){
-     mySpeed=(double)(Math.random()*3)+.1;
+     mySpeed=(double)(Math.random()*2)+.4;
      myX=300;
      myY=300;
      }
      if (650<myY||myY<-250){
-     mySpeed=(double)(Math.random()*3)+.1;
+     mySpeed=(double)(Math.random()*2)+.4;
      myY=300;
      myX=300;
      }
