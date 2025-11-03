@@ -7,7 +7,7 @@ class Particle
      myX=300;
      myY=300;
      myAngle=(double)(Math.random()*2)*Math.PI;
-     mySpeed=(double)(Math.random()*3)+.6;
+     mySpeed=(double)(Math.random()*5)+.6;
      myHeight=10;
      myWidth=10;
      //myX=(Math.cos(myAngle))*mySpeed+myX;
@@ -19,6 +19,8 @@ class Particle
    ellipse((float)myX,(float)myY,myHeight, myWidth);
   }  
   public void move(){
+     myX=((Math.cos(myAngle))*mySpeed)+myX;
+     myY=((Math.sin(myAngle))*mySpeed)+myY;
      if (Math.random()*100+650<myX||myX<Math.random()*100-350){
        myAngle=(double)(Math.random()*2)*Math.PI;
      mySpeed=(double)(Math.random()*3)+.6;
@@ -31,9 +33,10 @@ class Particle
      myY=300;
      myX=300;
      }
-     myX=((Math.cos(myAngle))*mySpeed)+myX;
-     myY=((Math.sin(myAngle))*mySpeed)+myY;
+     //myX=((Math.cos(myAngle))*mySpeed)+myX;
+     //myY=((Math.sin(myAngle))*mySpeed)+myY;
   }
+
   public void setX(double x){
     myX=x;
   }
@@ -77,5 +80,3 @@ class Particle
     return myWidth;
   }
 }
-
-
