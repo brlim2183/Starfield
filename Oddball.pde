@@ -23,7 +23,7 @@ class OddballParticle extends Particle//inherits from Particle
   }
    public void move(){
      susan[0].setX((Math.cos(susan[0].getAngle())*susan[0].getSpeed())+susan[0].getX());
-     susan[0].setY((Math.cos(susan[0].getAngle())*susan[0].getSpeed())+susan[0].getY());
+     susan[0].setY((Math.sin(susan[0].getAngle())*susan[0].getSpeed())+susan[0].getY());
      // myX=((Math.cos(myAngle))*mySpeed)+myX;
      //myY=((Math.sin(myAngle))*mySpeed)+myY;
      if (Math.random()*100+650<(susan[0].getX())||(susan[0].getX())<Math.random()*100-350){
@@ -41,4 +41,3 @@ class OddballParticle extends Particle//inherits from Particle
      
   }
 }
-
